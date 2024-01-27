@@ -1,171 +1,266 @@
 ﻿
-// See https://aka.ms/new-console-template for more information
+//LOOPS
 
-#region Task1
-using System.Threading.Channels;
-
-Console.Write("Enter one department: ");
-string department = Console.ReadLine();
-switch (department)
-{
-    case "HR":
-        Console.WriteLine("Human resources department");
-        break;
-    case "IT":
-        Console.WriteLine("Information Technology department");
-        break;
-    case "Finance":
-        Console.WriteLine("Finance department");
-        break;
-    default:
-        Console.WriteLine("There is no such department");
-        break;
-}
+#region Task 1
+//long multiple = 1;
+//int number = 1;
+//while (number < 50)
+//{
+//    multiple *= number;
+//    number += 3;
+//}
+//console.writeline(multiple);
 #endregion
 
-#region Task2
-Console.Write("Enter your experience: ");
-int experience = Convert.ToInt32(Console.ReadLine());
+#region Task 2
+//int SumOfDividedThreeAndSix = 0;
+//int MultipleOfDividedFiveAndTwo = 1;
+//int CountOfOddNumbers = 0;
 
-if(experience >= 0 && experience <= 2) Console.WriteLine("Your salary: 2000 AZN");
-else if (experience >= 3 && experience < 5) Console.WriteLine("Your salary: 5000 AZN");
-else if(experience >= 5 && experience <= 10) Console.WriteLine("Your salary: 7000 AZN");
-else if(experience > 10) Console.WriteLine("Your salary: 10000 AZN");
+//for (int i = 1; i < 20; i++)
+//{
+//	if (i%3==0 && i%6==0)
+//	{
+//        SumOfDividedThreeAndSix += i;
+//    }
+//	if (i%2==0 && i%5==0)
+//	{
+//        MultipleOfDividedFiveAndTwo *= i;
+
+//    }
+//    if (i % 2 != 0)
+//    {
+//        CountOfOddNumbers += i;
+//    }
+//}
+//Console.WriteLine($"Sum of divided by three and six is {SumOfDividedThreeAndSix}");
+//Console.WriteLine($"Multiple of divided by five and two is {MultipleOfDividedFiveAndTwo}");
+//Console.WriteLine($"Count of odd numbers is {CountOfOddNumbers}");
 #endregion
 
-#region Task3
-Console.Write("Enter time: ");
-int time = Convert.ToInt32(Console.ReadLine());
+#region Task 3
+//int number = Convert.ToInt32(Console.ReadLine());
+//int SumOfPositives = 0;
+//int CountOfZeros = 0;
 
-if (time>0 && time<12) Console.WriteLine("Good Morning");
-else if (time>=12 && time<=17 ) Console.WriteLine("Good Afternoon");
-else if (time>17 && time<=24) Console.WriteLine("Good Evening");
+//if (number < 0)
+//{
+//    Console.WriteLine("Verilmis eded sifirdan kicikdir...");
+//}
+
+//else
+//{
+
+//    while (number > 0)
+//    {
+//        int numbersInsideOfnumber = number % 10;
+//        if (numbersInsideOfnumber > 0)
+//        {
+//            SumOfPositives += numbersInsideOfnumber;
+//        }
+//        else if (numbersInsideOfnumber == 0)
+//        {
+//            CountOfZeros++;
+//        }
+//        number /= 10;
+//    }
+//    Console.WriteLine($"Verilmis ededin musbet reqemlerin cemi {SumOfPositives}-dir");
+//    Console.WriteLine($"Verilmis ededdeki sifirlarin sayi {CountOfZeros}-dir");
+
+//}
 #endregion
 
-#region Task4
+#region Task 4
 
-Console.WriteLine("Enter first number: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
+//int number=Convert.ToInt32(Console.ReadLine());
+//int numbersOfnumber = 0;
 
-Console.WriteLine("Enter second number: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
+//while (number > 0)
+//{
+//    numbersOfnumber = number % 10;
+//    Console.Write(numbersOfnumber);
 
-Console.WriteLine("Enter third number: ");
-int number3 = Convert.ToInt32(Console.ReadLine());
-
-double averageValue=(number1+number2+number3)/ 3;
-Console.Write(averageValue);
-if (averageValue < 20) { Console.WriteLine(" Aktiv"); }
-else if (averageValue > 20) { Console.WriteLine(" Deaktiv"); }
-
+//    number /= 10;
+//}
 #endregion
 
-#region No1_and_No2
+#region Task 5
+//Console.WriteLine("Sehifeye daxil olmaq ucun login ve paswordu duzgun qeyd etmelisiniz, eger cehdiniz 3-den cox olarsa sehifeye daxil ola  bilmeyeceksiniz");
 
-Console.WriteLine("Enter first side: ");
-int side1 = Convert.ToInt32(Console.ReadLine());
+//string userLogin = "booleanteach";
+//string userPassword = "booleanms13";
 
-Console.WriteLine("Enter second side: ");
-int side2 = Convert.ToInt32(Console.ReadLine());
+//for (int i = 1; i <= 3; i++)
+//{
+//    Console.Write("Login daxil edin: ");
+//    string enteredLogin = Console.ReadLine();
 
-Console.WriteLine("Enter third side: ");
-int side3 = Convert.ToInt32(Console.ReadLine());
+//    Console.Write("Password daxil edin: ");
+//    string enteredPassword = Console.ReadLine();
 
-//Ucbucagin movcudlugunu yoxlama
-if(side1+side2>side3 || side1 + side3 > side2 || side3 + side2 > side1)
+//    if (userLogin != enteredLogin && userPassword != enteredPassword)
+//    {
+//        Console.WriteLine("Login ve password yanlisdir...");
+//    }
+//    else if (userLogin != enteredLogin)
+//    {
+//        Console.WriteLine("Login yanlisdir...");
+//    }
+//    else if (userPassword != enteredPassword)
+//    {
+//        Console.WriteLine("Password yalnisdir...");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Sehifeye daxil oldunuz...");
+//        break;
+//    }
+
+
+//    if (i != 3)
+//    {
+//        Console.WriteLine("Yeniden cehd edin...");
+
+//    }
+//    else
+//    {
+//        Console.WriteLine("Teessuf ki sehifeye daxil ola bilmediniz...");
+//    }
+//}
+#endregion
+
+//ARRAYS
+#region Task 1
+//Console.Write("Arraydaki element sayini daxil edin: ");
+//int studentCount=Convert.ToInt32(Console.ReadLine());
+//string[] student = new string[studentCount];
+
+//for (int i = 0; i<studentCount;i++)
+//{
+//    student[i]=Console.ReadLine();
+//}
+
+//Console.WriteLine("Arraydaki elementler: ");
+//foreach (var item in student)
+//{
+//    Console.WriteLine(item);
+//}
+#endregion
+
+#region Task 2
+//int[] numbers = new int[5];
+//int SumOfEven = 0, MultipleOfOdd = 1;
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    numbers[i] = Convert.ToInt32(Console.ReadLine());
+
+//   if (numbers[i] % 2 == 0)
+//   {
+//        SumOfEven += numbers[i];
+//   }
+
+//   else if (numbers[i]%2!=0)
+//        {
+//        MultipleOfOdd *= numbers[i];
+//        }
+
+//}
+//Console.WriteLine($"Cut ededlerin cemi: {SumOfEven}");
+//Console.WriteLine($"Tek ededlerin hasili: {MultipleOfOdd}");
+#endregion
+
+#region Task 3
+//int[] numbersA = { 4, 6, -3, 44, -5 };
+//int[] numbersB = { 9, 6, 100, 11, -20 };
+
+//int numbersA_Max = 0;
+//int IndexOfMaxA = 0;
+
+//int numbersB_Min = 101;
+//int IndexOfMinB = 0;
+
+//for (int i = 0; i < numbersA.Length; i++)
+//{
+//	if (numbersA[i] > numbersA_Max)
+//	{
+//		numbersA_Max = numbersA[i];
+//		IndexOfMaxA = i;
+//	}
+//}
+
+//for (int j = 0; j < numbersB.Length; j++)
+//{
+//	if (numbersB[j] < numbersB_Min)
+//	{
+//		numbersB_Min = numbersB[j];
+//		IndexOfMinB = j;
+//	}
+//}
+
+//int temp = numbersA[IndexOfMaxA];
+//numbersA[IndexOfMaxA] = numbersB[IndexOfMinB];
+//numbersB[IndexOfMinB] = temp;
+
+//foreach (var itemsA in numbersA)
+//{
+//	Console.Write($"{itemsA} ");
+//}
+
+//Console.WriteLine("\n");
+
+//foreach (var itemsB in numbersB)
+//{
+//	Console.Write($"{itemsB} ");
+//}
+#endregion
+
+#region Task 4
+int[,] matrixA =
 {
-    Console.WriteLine("Bele ucbucaq movcuddur...");
-}
-else { Console.WriteLine("Bele ucbucaq movcud deyil..."); }
+    {1, 2, 3},
+    {4, 5, 6}
+};
 
-//Ucbucagin tipini yoxlama
-if (side1==side2 && side2==side3)
+int[,] matrixB =
 {
-    Console.WriteLine("Beraberterefli ucbucaqdir(hem de beraberyanli)");
-}else if(side1 == side2 || side2 == side3 || side1 == side3)
+    {7, 8},
+    {9, 10},
+    {11, 12}
+};
+
+int rowsA = matrixA.GetLength(0);
+int colsA = matrixA.GetLength(1);
+int rowsB = matrixB.GetLength(0);
+int colsB = matrixB.GetLength(1);
+
+if (colsA != rowsB)
 {
-    Console.WriteLine("Beraberyanli ucbucaqdir");
+    Console.WriteLine("Matrix multiplication is not possible with the given matrices...");
 }
 else
 {
-    Console.WriteLine("Muxtelifterefli ucbucaqdir");
+    int[,] productMatrix = new int[rowsA, colsB];
+
+    for (int i = 0; i < rowsA; i++)
+    {
+        for (int j = 0; j < colsB; j++)
+        {
+            int sum = 0;
+            for (int k = 0; k < colsA; k++)
+            {
+                sum += matrixA[i, k] * matrixB[k, j];
+            }
+
+            productMatrix[i, j] = sum;
+            Console.WriteLine($"productMatrix[{i},{j}]: {productMatrix[i, j]}");
+        }
+    }
 }
 #endregion
 
-#region No3
-Console.WriteLine("Enter type of weather: cloudy, sunny or snowy  ");
-string typeOfWeather = Console.ReadLine();
-switch (typeOfWeather)
-{
-    case "cloudy":
-        Console.WriteLine("It might be cold, you need a jacket.");
-        break;
-    case "snowy":
-        Console.WriteLine("It will be cold, you need a scarf and gloves");
-        break;
-    case "sunny":
-        Console.WriteLine("It will be hot, you can go to beach");
-        break;
-   
-}
-#endregion
-
-#region No4
-Console.WriteLine("Enter number: ");
-int numberOfMonth = Convert.ToInt32(Console.ReadLine());
-
-if(numberOfMonth>12 || numberOfMonth <0)
-{
-    Console.WriteLine("Eded 1 ve 12 arasinda olmalidir... ");
-}
-switch (numberOfMonth)
-{
-    case 1:
-        Console.WriteLine("Yanvar");
-        break;
-    case 2:
-        Console.WriteLine("Fevral");
-        break;
-    case 3:
-        Console.WriteLine("Mart");
-        break;
-    case 4:
-        Console.WriteLine("Aprel");
-        break;
-    case 5:
-        Console.WriteLine("May");
-        break;
-    case 6:
-        Console.WriteLine("Iyun");
-        break;
-    case 7:
-        Console.WriteLine("Iyul");
-        break;
-    case 8:
-        Console.WriteLine("Avqust");
-        break;
-    case 9:
-        Console.WriteLine("Sentyabr");
-        break;
-    case 10:
-        Console.WriteLine("Oktyabr");
-        break;
-    case 11:
-        Console.WriteLine("Noyabr");
-        break;
-    case 12:
-        Console.WriteLine("Dekabr");
-        break;
 
 
-}
-#endregion
 
-#region No5
-Console.WriteLine("Enter number: ");
-int num = Convert.ToInt32(Console.ReadLine());
 
-string netice = (num >= 0) ? "Bu musbet ededdir" : "Bu menfi ededdir";
-Console.WriteLine(netice);
 
-#endregion
